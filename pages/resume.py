@@ -3,7 +3,7 @@ from fpdf import FPDF
 import google.generativeai as genai
 
 # API Key
-GOOGLE_API_KEY = "AIzaSyCXXp_u1sF4iUMOFRw9nyGfVS0CnzvwKXs"
+GOOGLE_API_KEY = "AIzaSyBLJdEwaVJX61b63tLxgiFGtYsaWa4C38Q"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Streamlit Page Setup
@@ -134,3 +134,4 @@ if st.button("Generate Resume PDF"):
         st.success("Resume generated successfully!")
         st.subheader("Preview (Text Version)")
         st.text(ai_resume_text)
+
